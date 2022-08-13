@@ -75,6 +75,7 @@ fn main() {
     if let Some(extension) = path.extension() {
         outfile_resized.push(extension);
     }
+    let outfile_resized = path.parent().unwrap().join(outfile_resized);
 
     image::imageops::resize(&image, FFT_SIZE as u32, (sample_count as f32 /sample_rate as f32) as u32, image::imageops::FilterType::Nearest).save(outfile_resized).unwrap();
     println!("Samples: {:?}", sample_count);

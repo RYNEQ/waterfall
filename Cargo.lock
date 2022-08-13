@@ -1157,15 +1157,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2fd0db749597d91ff862fd1d55ea87f7855a744a8425a64695b6fca237d1dad1"
 
 [[package]]
-name = "spectrum_plotter"
-version = "0.1.0"
-dependencies = [
- "byteorder",
- "dsp",
- "image",
-]
-
-[[package]]
 name = "spin"
 version = "0.9.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1338,6 +1329,15 @@ name = "wasm-bindgen-shared"
 version = "0.2.82"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6598dd0bd3c7d51095ff6531a5b23e02acdc81804e30d8f07afb77b7215a140a"
+
+[[package]]
+name = "waterfall"
+version = "0.1.0"
+dependencies = [
+ "byteorder",
+ "dsp",
+ "image",
+]
 
 [[package]]
 name = "web-sys"
